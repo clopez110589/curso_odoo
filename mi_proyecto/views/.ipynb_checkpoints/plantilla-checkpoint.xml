@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <data>
+        <record model="ir.ui.view" id="course_view_list">
+            <field name="name">curso.odoo.form</field>
+            <field name="model">curso.odoo</field>
+            <field name="arch" type="xml">
+                <form string="Course Form">
+                    <sheet>
+                        <!--
+                        <h1><field name="name" string="Escriba el nombre del producto"/></h1>
+                        -->
+                        <h1>Nuevo registro de Articulo</h1>
+                        <group>
+                               <field name="name"/>
+                               <field name="description"/>
+                               <field name="proveedor_id"/>
+                               <field name="industria_id"/>
+                        </group>
+                             <!--
+                            </group>
+                            <group>
+                               <field name="description"/>
+                            </group>
+                            <group>
+                                <field name="proveedor_id"/>
+
+                            </group>
+-->
+   
+                        
+                        <!--
+                        <notebook>
+                            <page string="Description">
+                                Registre cada uno de los campos que se le solicita.
+                            </page>  
+                        </notebook>
+                        -->
+                    </sheet>    
+                </form>
+            </field>   
+        </record>
+         
+         
+
+                  <!--    
+        <record model="ir.ui.view" id="course_view_list">
+             <field name="description">curso.odoo.list</field>
+             <field name="model">curso.odoo</field>
+             <field name="arch" type="xml">
+                <tree string="Course List">
+                    <field name="name"/>
+                </tree>    
+             </field>    
+        </record>    
+
+         -->
+               
+         <record model="ir.ui.view" id="art_work_tree_view">
+            <field name="name">curso.odoo.view</field>
+            <field name="model">curso.odoo</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <button string="Details" groups="art_gallery.group_gallery_admin"/>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="proveedor_id"/>
+                    <field name="industria_id"/>
+                </tree>
+            </field>
+        </record>
+              
+    </data>
+</odoo>
